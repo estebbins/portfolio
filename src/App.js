@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Brand from './components/Brand'
+import Contact from './components/Contact'
+import Greeting from './components/Greeting'
+import Links from './components/Links'
+import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
+import { Container } from 'react-bootstrap'
+
+import './App.css'
 
 function App() {
     return (
-        <div className="App">
-        <header className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <p>
-            Edit <code>src/App.js</code> and save to reload.
-            </p>
-            <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-            >
-            Learn React
-            </a>
-        </header>
-        </div>
-    );
+        <>
+            <Container className="home ms-3" fluid="lg">
+                <Container className="greeting"><Greeting /></Container>
+                <Container className="skills"><Skills /></Container>
+                <Container className="brand"><Brand  /></Container>
+                <Container className="links"><Links  /></Container>
+                <Container className="contact"><Contact /></Container>
+                <Container className="portfolio"><Portfolio  /></Container>
+            </Container>
+        </>
+    )
 }
 
-export default App;
+export default App
