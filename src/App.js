@@ -12,7 +12,7 @@ import './App.css'
 function App() {
     return (
         <>
-            <Container className="home">
+            <Container fluid className="home">
                 <Container className="greeting"><Greeting /></Container>
                 <Container className="skills"><Skills /></Container>
                 <Container className="brand"><Brand  /></Container>

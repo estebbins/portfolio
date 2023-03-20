@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    /* margin: 0; */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
         'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
         sans-serif;
@@ -15,7 +15,7 @@ code {
 }
 .home {
     display: grid;
-    grid-template: 2.5fr 1fr .25fr 2fr .25fr / 1.5fr 2fr;
+    grid-template: 4fr 1fr .25fr 2fr .25fr / 1.5fr 2fr;
 }
 .greeting {
     grid-area: 2 / 1 / 3 / 2;
@@ -30,6 +30,8 @@ h1 {
 }
 .skills {
     grid-area: 3 / 1 / 4 / 2;
+    min-width: 0;
+    min-height: 0;
 }
 .brand {
     grid-area: 4 / 1 / 5 / 2;
@@ -41,58 +43,32 @@ h1 {
 .portfolio {
     grid-area: 1 / 2 / 6 / 3;
 }
-.scrolling-wrapper {
-    /* display: flex; */
-    /* flex-wrap: nowrap; */
-    /* position:absolute;  */
-    /* top:0px; 
-    left:0px;  */
-    /* overflow: hidden; 
-    white-space: nowrap;
-    animation: bannermove 20s linear infinite; */
-}
-/* .skill {
-    transition: all 0.5s ease;
-}
-.scrolling-wrapper:first-child {
-    animation: bannermove 10s linear infinite;
-    margin-left: -3195px;
-}
-
-@keyframes bannermove {
-    0% {margin-left: 0px;}
-    100% {margin-left: -3195px;}
-} */
-
+/* Source for infinite scrolling banner guidance and code: https://stackoverflow.com/questions/59980269/infinite-horizontal-scrolling-image-loop */
 .skillbanner {
     display: flex;
     flex-wrap: nowrap;
     overflow: hidden;
     height: .25fr;
-    width: 540px;
+    /* width: 400px; */
     text-align: center!important;
+    min-width: 0;
+    min-height: 0;
 }
-   
 .skill {
     /* margin-right: 15px; */
     /* height: 15px; */
     /* 90px (12*90 = 1080) */
     min-width: 90px!important;
 }
-
 .skill {
     transition: all .5s ease-in-out;
 }
-
 .first {
     animation: bannermove 10s linear infinite;
 }
-
 .skilllist.skillbanner .first {
     margin-left: -1080px;
 }
-
-
 @keyframes bannermove {
     0% {margin-left: 0px;}
     100% {margin-left: -1080px;}
