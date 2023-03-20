@@ -1,24 +1,32 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #006666;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #006666;
+    font-family: 'Work Sans', sans-serif;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .home {
     display: grid;
-    grid-template: 4fr 1fr .5fr 2fr .5fr / 1fr 2fr;
+    grid-template: 2.5fr 1fr .25fr 2fr .25fr / 1.5fr 2fr;
 }
 .greeting {
     grid-area: 2 / 1 / 3 / 2;
     color: #9B111E;
+    font-family: 'Playfair Display', serif;
+    justify-content: center;
+    margin-top: auto;
+}
+h1 {
+    font-size: 5rem!important;
+    text-shadow: 1px 0px 2px #EDDDD4;
 }
 .skills {
     grid-area: 3 / 1 / 4 / 2;
@@ -33,3 +41,60 @@ code {
 .portfolio {
     grid-area: 1 / 2 / 6 / 3;
 }
+.scrolling-wrapper {
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* position:absolute;  */
+    /* top:0px; 
+    left:0px;  */
+    /* overflow: hidden; 
+    white-space: nowrap;
+    animation: bannermove 20s linear infinite; */
+}
+/* .skill {
+    transition: all 0.5s ease;
+}
+.scrolling-wrapper:first-child {
+    animation: bannermove 10s linear infinite;
+    margin-left: -3195px;
+}
+
+@keyframes bannermove {
+    0% {margin-left: 0px;}
+    100% {margin-left: -3195px;}
+} */
+
+.skillbanner {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height: .25fr;
+    width: 540px;
+    text-align: center!important;
+}
+   
+.skill {
+    /* margin-right: 15px; */
+    /* height: 15px; */
+    /* 90px (12*90 = 1080) */
+    min-width: 90px!important;
+}
+
+.skill {
+    transition: all .5s ease-in-out;
+}
+
+.first {
+    animation: bannermove 10s linear infinite;
+}
+
+.skilllist.skillbanner .first {
+    margin-left: -1080px;
+}
+
+
+@keyframes bannermove {
+    0% {margin-left: 0px;}
+    100% {margin-left: -1080px;}
+}
+    

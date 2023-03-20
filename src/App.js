@@ -6,12 +6,13 @@ import Portfolio from './components/Portfolio'
 import Skills from './components/Skills'
 import { Container } from 'react-bootstrap'
 
+
 import './App.css'
 
 function App() {
     return (
         <>
-            <Container className="home ms-3" fluid="lg">
+            <Container className="home">
                 <Container className="greeting"><Greeting /></Container>
                 <Container className="skills"><Skills /></Container>
                 <Container className="brand"><Brand  /></Container>
