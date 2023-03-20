@@ -21,7 +21,7 @@ function App() {
                         <Container className="links d-flex justify-content-between"><Links  /></Container>
                     </Col>
                     <Col xs={7}>
-                        <Container className="portfolio"><Portfolio  /></Container>
+                        <Container className="portfolio vh-100"><Portfolio  /></Container>
                     </Col>
                 </Row>
             </Container>
