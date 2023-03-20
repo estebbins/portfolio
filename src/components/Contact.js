@@ -3,7 +3,7 @@
 const Contact = (props) => {
     return (
         <p className="brand-statement">
-            CONTACT ME
+            Contact Emily Stebbins
         </p>
     )
 }
