@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 const Portfolio = (props) => {
     return (
         <>
-            <div className="portfolio-images">
+            <div className="portfolio-images first-img">
                 <a href="https://hoistm.netlify.app"  target="_blank" rel="noreferrer">       
                 <img
                     className="d-block w-100 portfolio-img"
@@ -11,7 +11,7 @@ const Portfolio = (props) => {
                     alt="hoist{m} web preview"
                 /></a>
                 <h3 className="portfolio-header">hoist&#123;m&#125;</h3>
-                <p className="portfolio-text">This app allows users to upload files into a virtual file system where the user can save and download their files. Users can create custom labels as the singular & simple method for file organization. This is a full-stack MERN app using AWS S3 cloud storage and Multer middleware for file upload. </p>
+                <p className="portfolio-text">This app allows users to upload files into a virtual file system where the user can save and download their files. Users can create custom labels as the singular & simple method for file organization. This is a full-stack MERN app using AWS S3 cloud storage and Multer middleware for file upload.</p>
             </div>
             <div className="portfolio-images passengerk">
                 <a href="https://estebbins.github.io/passenger.k/"  target="_blank" rel="noreferrer">       
