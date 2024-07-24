@@ -80,9 +80,9 @@ h1 {
     0% {margin-left: 0px;}
     100% {margin-left: -1080px;}
 }
-.LI-Logo, .gh-logo, .resume {
+.LI-Logo, .gh-logo, .resume, .fortnite {
     min-height: 20px;
-    max-height: 25px;
+    max-height: 30px;
     margin-bottom: 10px;
 }
 .contact-btn {
