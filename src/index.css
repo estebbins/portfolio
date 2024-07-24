@@ -65,7 +65,8 @@ h1 {
     /* margin-right: 15px; */
     /* height: 15px; */
     /* 90px (12*90 = 1080) */
-    min-width: 90px!important;
+    /* New: 22 * 110 = 2420 */
+    min-width: 110px!important;
 }
 .skill {
     transition: all .5s ease-in-out;
@@ -74,11 +75,11 @@ h1 {
     animation: bannermove 10s linear infinite;
 }
 .skilllist.skillbanner .first {
-    margin-left: -1080px;
+    margin-left: -2420px;
 }
 @keyframes bannermove {
     0% {margin-left: 0px;}
-    100% {margin-left: -1080px;}
+    100% {margin-left: -2420px;}
 }
 .LI-Logo, .gh-logo, .resume, .fortnite {
     min-height: 20px;
