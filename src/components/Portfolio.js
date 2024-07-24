@@ -21,7 +21,7 @@ const Portfolio = (props) => {
                     alt="passenger.k web preview"
                 /></a>
                 <h3 className="portfolio-header">passenger.k</h3>
-                <p className="portfolio-text">This app allows users to upload files into a virtual file system where the user can save and download their files. Users can create custom labels as the singular & simple method for file organization. This is a full-stack MERN app using AWS S3 cloud storage and Multer middleware for file upload. </p>
+                <p className="portfolio-text">Inspired by the mundane, this gameplay explores the experience of a passenger on a plane waiting for their flight to take off. This is a time-based point & click adventure designed to be played multiple times, each time trying a different set of actions to see how they effect the outcome.</p>
             </div>
             <div className="portfolio-images">
                 <a href="https://steamee.fly.dev/"  target="_blank" rel="noreferrer">       

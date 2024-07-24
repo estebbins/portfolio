@@ -103,6 +103,14 @@ h1 {
     border-radius: 5px;
     box-shadow: 2px 2px 4px 2px black;
 }
+.portfolio-images:hover .portfolio-text {
+    color: white;
+    text-shadow: 1px 1px 5px #EDDDD4, 2px 2px 4px #040404;
+    background-color: #030303c8;
+}
+.portfolio-images:hover .portfolio-img {
+    filter: blur(3px);
+}
 .portfolio-header {
     position: absolute;
     top: 50%;
@@ -118,8 +126,12 @@ h1 {
     transform: translate(-50%, -50%);
     color: transparent;
 }
-.portfolio-text:hover {
+
+/* .portfolio-text:hover {
     color: white;
     text-shadow: 1px 1px 5px #EDDDD4, 2px 2px 4px #040404;
     background-color: #030303c8;
-}
+} */
+/* .portfolio-img:hover {
+    filter: blur(4px);
+} */
